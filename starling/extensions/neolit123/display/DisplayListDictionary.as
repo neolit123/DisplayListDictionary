@@ -66,10 +66,10 @@ package starling.extensions.neolit123.display
 		public var instancePrefix:String;
 
 		public function DisplayListDictionary(_srcClass:Class = null,
-											  _frameRate:uint = 30,
-											  _juggleMovieClips:Boolean = true,
-											  _useAlpha:Boolean = true,
-											  _useAlphaColor:uint = 0x0):void
+		                                      _frameRate:uint = 30,
+		                                      _juggleMovieClips:Boolean = true,
+		                                      _useAlpha:Boolean = true,
+		                                      _useAlphaColor:uint = 0x0):void
 		{
 			super();
 			instancePrefix = DEF_INSTANCE_PREFIX;
@@ -102,10 +102,10 @@ package starling.extensions.neolit123.display
 		}
 
 		private function addDisplayObject(_dest:starling.display.DisplayObjectContainer,
-											_obj:Object,
-											_target:*,
-											_path:String,
-											_i:int = -1):void
+		                                  _obj:Object,
+		                                  _target:*,
+		                                  _path:String,
+		                                  _i:int = -1):void
 		{
 			if (!_target || !_obj)
 				return;
@@ -173,8 +173,8 @@ package starling.extensions.neolit123.display
 		}
 
 		private function traverseConvert(_dest:starling.display.DisplayObjectContainer,
-										 _src:flash.display.DisplayObjectContainer,
-										 _path:String = ""):void
+		                                 _src:flash.display.DisplayObjectContainer,
+		                                 _path:String = ""):void
 		{
 			const txtDynOffsetW:uint = 1;
 			const txtInpOffsetW:uint = 2;
